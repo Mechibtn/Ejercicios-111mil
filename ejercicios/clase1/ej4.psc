@@ -1,9 +1,14 @@
 Algoritmo Ejercicio4
-	definir a,b,c,d,e,f,h,i Como entero
-	definir fechasalida Como Caracter
-	Escribir "Ingrese una fecha AAAAMMDD :"
-	Leer a,b,c,d,e,f,h,i
-	Escribir "La fecha es: "h,i escribir "/" e,f escribir"/" a,b,c,d 
+	definir fechaentrada Como cadena
+	definir anio,mes,dia como cadena
 	
+	Escribir "Ingrese una fecha AAAAMMDD :"
+	Leer fechaentrada
+	
+	anio<-Subcadena(fechaentrada,0,4)
+	mes<-subcadena(fechaentrada,5,6)
+	dia<-subcadena(fechaentrada,7,8)
+	
+	Escribir "La fecha es: " dia "/" mes "/" anio	
 	
 FinAlgoritmo
